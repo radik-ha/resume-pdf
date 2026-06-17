@@ -1,1 +1,1 @@
-Forked from The Original Template by [Jake Gutierrez](github.com/jakeryang/)
+Forked from The Original Template by [Jake Gutierrez](github.com/jakeryang/resume)
