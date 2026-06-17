@@ -1,0 +1,269 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{lmodern}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{{marvosym}}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\fancyfoot[L]{Rathika - Resume}
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+{\fontsize{22}{24}\selectfont\textbf{Rathika S}} & +91 9080053414 \\
+\href{https://github.com/radik-ha}{https://github.com/radik-ha} &
+\href{mailto: rathikaari10@gmail.com}{rathikaari10@gmail.com}
+\end{tabular*}
+\vspace{4pt}
+
+\vspace{8pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Einstein College of Engineering}{Tirunelveli, India}
+      {B.E., Computer Science and Engineering}{2024-2028}
+     
+    \resumeSubheading
+      {Government Hr. Sec. School}{Tenkasi, India}
+      {Higher Secondary School Examination (Score: 86.4\%)}{2024}
+      
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C} \\
+      \vspace{4pt}
+     \textbf{Web Development Frameworks}{: HTML, CSS, JavaScript, ReactJS, Bootstrap} \\
+      \vspace{4pt}
+     \textbf{Version Control Systems}{: Git, GitHub}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{RAG Assistant} $|$ \emph{Python, FAISS, SentenceTransformers, Google Gemini API}}
+          
+         \resumeItemListStart
+            \resumeItem{Developed a Retrieval-Augmented Generation (RAG) system to process scientific text and generate context-aware comprehension questions.}
+            \resumeItem{Implemented FAISS for fast and efficient vector similarity search over large document embeddings.}
+            \resumeItem{Used SentenceTransformer to convert raw text into dense semantic embeddings for accurate information retrieval.}
+            \resumeItem{Integrated Gemini (Google Generative AI) to generate high-quality, context-aware questions from retrieved content.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Crud Page} $|$ \emph{HTML, CSS, JavaScript}}
+          
+          \resumeItemListStart
+            \resumeItem{Developed a CRUD web application for managing user records.}
+            \resumeItem{Implemented Create, Read, Update, and Delete operations using JavaScript.}
+            \resumeItem{Designed a responsive and user-friendly interface.}
+            \resumeItem{Applied form validation to ensure data accuracy.}
+            \resumeItem{Enhanced user experience through dynamic content updates.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{WhatsApp UI Clone} $|$ \emph{ReactJS}}
+          
+          \resumeItemListStart
+            \resumeItem{Developed a WhatsApp-inspired messaging interface using ReactJS.}
+            \resumeItem{Implemented conditional rendering for dynamic UI updates.}
+            \resumeItem{Created reusable React components for better maintainability.}
+            \resumeItem{Designed a responsive layout compatible with multiple devices.}
+            \resumeItem{Improved front-end development skills through component-based architecture.}
+          \resumeItemListEnd
+       \resumeProjectHeading
+          {\textbf{Zacebook} $|$ \emph{ReactJS}}
+        
+          \resumeItemListStart
+            \resumeItem{Built a social media-inspired application using ReactJS.}
+            \resumeItem{Utilized Props and useState for component communication and state management.}
+            \resumeItem{Created reusable UI components for scalability.}
+            \resumeItem{Implemented interactive features to enhance user engagement.}
+            \resumeItem{Applied React best practices for maintainable code.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Animals Sound} $|$ \emph{HTML, CSS, JavaScript}}
+          
+          \resumeItemListStart
+            \resumeItem{Developed an interactive application that plays animal sounds on user interaction.}
+            \resumeItem{Implemented JavaScript event handling for audio playback.}
+            \resumeItem{Designed an engaging and responsive user interface.}
+            \resumeItem{Enhanced user experience through interactive functionality.}
+            \resumeItem{Demonstrated DOM manipulation and multimedia integration skills.}
+          \resumeItemListEnd
+          \vspace{60pt}
+        \resumeProjectHeading
+          {\textbf{Web Piano} $|$ \emph{HTML, CSS, JavaScript}}
+          
+          \resumeItemListStart
+            \resumeItem{Built a virtual piano application capable of generating musical notes.}
+            \resumeItem{Implemented keyboard and mouse-based interactions.}
+            \resumeItem{Integrated audio playback using JavaScript.}
+            \resumeItem{Designed an intuitive and responsive interface.}
+            \resumeItem{Applied event-driven programming concepts for real-time interaction.}
+          \resumeItemListEnd
+           
+        \resumeProjectHeading
+          {\textbf{My First React App} $|$ \emph{ReactJS}}
+
+          \resumeItemListStart
+            \resumeItem{Developed a beginner-friendly React application to understand component-based development.}
+            \resumeItem{Implemented reusable React components and basic state management to create an interactive user interface.}
+          \resumeItemListEnd
+              
+        \resumeProjectHeading
+          {\textbf{Fruits Page} $|$ \emph{HTML, CSS}}
+
+          \resumeItemListStart
+            \resumeItem{Developed a responsive webpage showcasing fruits using Flexbox and Flex-Wrap layouts.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Vegetables Page} $|$ \emph{HTML, CSS}}
+          
+          \resumeItemListStart
+            \resumeItem{Created a responsive website displaying vegetable information using modern CSS Flexbox techniques.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Virus Page} $|$ \emph{Bootstrap}}
+       
+          \resumeItemListStart
+            \resumeItem{Built an informative and responsive webpage using Bootstrap components and grid systems.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Dolphin Page} $|$ \emph{HTML, CSS}}
+     
+          \resumeItemListStart
+            \resumeItem{Designed a visually appealing webpage presenting information about dolphins.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Green Calculator} $|$ \emph{HTML, CSS, JavaScript}}
+        
+          \resumeItemListStart
+            \resumeItem{Developed a web-based calculator capable of performing basic arithmetic operations.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Insects Page} $|$ \emph{HTML, CSS  (Media Query)}}
+        
+          \resumeItemListStart
+            \resumeItem{Created a responsive website showcasing insect information using CSS media queries..}
+          \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+    
+\section{Achievements/Activities}
+\begin{itemize}[leftmargin=0.15in]
+
+\item \textbf{Tamil Talent Search Examination (TTSE) Scholarship Recipient} \\
+Qualified in the Tamil Talent Search Examination (TTSE) conducted by the Government of Tamil Nadu at the district level during 11th standard. Selected for a merit-based scholarship in recognition of academic excellence and strong aptitude.
+\item \textbf{Error Hunt Competition – Triogenix'26 Technical Symposium} \\
+Participated in the Error Hunt competition held as part of Triogenix'26 Technical Symposium at Thamirabharani Engineering College, Tirunelveli (MAR 2026). Gained hands-on experience in debugging and problem-solving by identifying and correcting programming errors.
+\item \textbf{LLM-Based Chatbot – National Level Technical Symposium, P.S.R. Engineering College, Sivakasi} \\
+Presented and developed an AI-powered chatbot project using Large Language Model (LLM) concepts at a National Level Technical Symposium. The chatbot is designed to understand natural language queries and generate intelligent, human-like responses. It improves user interaction by providing context-aware answers and simulating conversational AI behavior. The project demonstrates the application of modern AI techniques in real-time communication systems and enhances automation in information retrieval. (SEP 2025)
+\item \textbf{Painting Competition – Kalaithiruvizha (Government of Tamil Nadu)} \\
+Selected for district-level participation in a painting competition conducted under Kalaithiruvizha by the Government of Tamil Nadu. The event was held at Kongunadu Engineering College, Trichy, and showcased creative and artistic abilities through visual expression.(2023 - 2024)
+\item \textbf{SoloLearn Certifications} \\
+Completed 9 certifications from SoloLearn covering programming and web development, including HTML, CSS, JavaScript, Python (beginner to intermediate), Web Development, Python Developer, JavaScript Intermediate, and C Programming. Strengthened core skills in programming fundamentals and web technologies through hands-on practice.
+\vspace{60pt}
+\end{itemize}
+\end{document}
